@@ -1,0 +1,44 @@
+3rd
+
+https://stackoverflow.com/a/10459713
+https://unix.stackexchange.com/a/348180
+https://stackoverflow.com/a/25994935
+
+4th
+
+https://stackoverflow.com/a/12450125
+https://stackoverflow.com/a/64539170
+https://stackoverflow.com/a/8595926
+
+5th
+
+https://stackoverflow.com/a/1665110
+// gcc -std=c99 -pthread 5_pthreads_fibo.c
+
+0 Child1 Thread
+1 Child2 Thread
+2 Parent Thread
+3 Print  Thread
+
+6th
+
+https://stackoverflow.com/a/1665110
+https://stackoverflow.com/a/8018420
+// gcc -std=c99 -pthread tt.c
+
+7th
+
+https://gist.github.com/pratyushgguptaa/5294753dee539f7bd03968ed115f9db0
+https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-mlfq.pdf
+
+8th
+
+https://github.com/codophobia/producer-consumer-problem-solution-in-c/blob/master/producer-consumer.c
+https://github.com/FLombardi-PhD/C-teaching/tree/master/lab05-producer-consumer
+https://stackoverflow.com/questions/2332765/what-is-the-difference-between-lock-mutex-and-semaphore
+https://en.wikipedia.org/wiki/Dining_philosophers_problem#Solutions
+https://www.youtube.com/watch?v=l6zkaJFjUbM
+
+https://github.com/twseptian/Operating-System-Codes
+https://github.com/sasikiranE/CSO-231-OperatingSystems/tree/main/lab8
+https://iitbhucse21sem4.notion.site/CSO-231-Operating-Systems-4237af6a9a6b4d4cbd9bfdde332a50b7

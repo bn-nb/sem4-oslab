@@ -1,0 +1,38 @@
+Write a simple shell in C for Linux
+https://www.programiz.com/c-programming/online-compiler/
+
+REPL:
+
+References:
+    https://github.com/selmakahraman/unix-shell-and-history-feature/blob/master/unix-shell.c
+    https://brennan.io/2015/01/16/write-a-shell-in-c/
+    https://stackoverflow.com/questions/840501/how-do-function-pointers-in-c-work
+    https://stackoverflow.com/a/58500827
+    https://www.reddit.com/r/C_Programming/comments/h8x8pz/function_pointers/
+
+Notes:
+    malloc, realloc as needed MR
+    xallocd memory persists till end of program
+    so simply return the address of xallocd space
+
+Read:
+    input and parse line
+    split into words; tokenize
+    strtok
+
+Evaluate:
+    call fork
+    call execvp in child
+    handle built in cmds seperately with funcptrs
+
+    execvp:
+        accepts filename, and array of argstrs
+        argstrs 
+        -> first arg is filename
+        -> last arg must be null
+        returns -1 iff error
+
+Print:
+    outputs / error messages
+
+Loop if status
