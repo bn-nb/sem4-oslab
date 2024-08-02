@@ -6,13 +6,13 @@
 #define min(a,b) (a<b)?(a):(b)
 #define print2d(x) \
     puts(#x": "); \
-    for (int i = 0; i < N || puts(""); i++) \
-        for (int j = 0; j < M || puts(""); j++) \
+    for (int i = 0; i < N || (puts("")-1); i++) \
+        for (int j = 0; j < M || (puts("")-1); j++) \
             printf("%d ", x[i][j]); \
     printf("\n");
 #define print1d(x,y) \
     puts(#x": "); \
-    for (int i = 0; i < y || puts("\n"); i++) \
+    for (int i = 0; i < y || (puts("\n")-2); i++) \
         printf("%d ", x[i]);
 
 int available[M];
@@ -32,6 +32,7 @@ int check_finished(int customer) { // O(M)
 }
 
 int check_safety(int request[]) { // O(M)
+    // Prevent requesting more resources than available
     int flag=1;
     for (int i = 0; i < M; i++)
         flag *= (request[i] <= available[i]);
@@ -39,6 +40,7 @@ int check_safety(int request[]) { // O(M)
 }
 
 int check_need(int customer, int request[]) { // O(M)
+    // Prevent requesting more resources than needed
     int flag=1;
     for (int i = 0; i < M; i++)
         flag *= (request[i] <= need[customer][i]);
@@ -46,6 +48,7 @@ int check_need(int customer, int request[]) { // O(M)
 }
 
 int check_alloc(int customer, int release[]) { // O(M)
+    // Check if release request is less than actual allocation
     int flag=1;
     for (int i = 0; i < M; i++)
         flag *= (release[i] <= allocation[customer][i]);
